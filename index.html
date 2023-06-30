@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="backdrop">
+      <div class="order-modal">
+        <button class="order-modal-close">
+          <svg class="order-modal-icon" width="24px" height="24px">
+            <use></use>
+          </svg>
+        </button>
+
+        <h2 class="order-modal-title">Your Order</h2>
+
+        <form class="order-modal-form">
+          <div class="order-modal-checkbox">
+            <div class="checkbox-box">
+              <p class="checkbox-box-name">Cabbage Basket</p>
+              <p class="checkbox-box-text">Plant</p>
+              <label for="user-check"></label>
+              <input
+                class="checkbox-input visually-hidden"
+                type="checkbox"
+                name="user-check"
+                id="user-check"
+                value="true"
+              />
+              <span class="checkbox-span">
+                <svg>
+                  <use></use>
+                </svg>
+              </span>
+              <img
+                class="checkbox-img"
+                srcset="./img/cabbage2x-mob.png 2x"
+                src="./img/cabbage1x-mob.png"
+                alt="cabbage"
+                width="94"
+                height="78"
+              />
+            </div>
+
+            <div class="checkbox-box">
+              <p class="checkbox-box-name">Tomato Basket</p>
+              <p class="checkbox-box-text">Plant</p>
+              <label for="user-check"></label>
+              <input
+                class="checkbox-input visually-hidden"
+                type="checkbox"
+                name="user-check"
+                id="user-check"
+                value="true"
+              />
+              <span class="checkbox-span">
+                <svg>
+                  <use></use>
+                </svg>
+              </span>
+              <img
+                class="checkbox-img"
+                srcset="./img/tomato2x-mob.png 2x"
+                src="./img/tomato1x-mob.png"
+                alt="tomato"
+                width="94"
+                height="78"
+              />
+            </div>
+
+            <div class="checkbox-box">
+              <p class="checkbox-box-name">Vegetables Basket</p>
+              <p class="checkbox-box-text">Plant</p>
+              <label for="user-check"></label>
+              <input
+                class="checkbox-input visually-hidden"
+                type="checkbox"
+                name="user-check"
+                id="user-check"
+                value="true"
+              />
+              <span class="checkbox-span">
+                <svg>
+                  <use></use>
+                </svg>
+              </span>
+              <img
+                class="checkbox-img"
+                srcset="./img/vegetables-basket2x-mob.png 2x"
+                src="./img/vegetables-basket1x-mob.png"
+                alt="vegetables-basket"
+                width="94"
+                height="78"
+              />
+            </div>
+          </div>
+
+          <div class="form-thumb">
+            <div class="modal-input-box">
+              <label class="order-modal-label" for="user-name"></label>
+              <input
+                class="order-modal-input"
+                placeholder="Enter full name..."
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+            </div>
+
+            <div class="modal-input-box">
+              <label class="order-modal-label" for="user-email"></label>
+              <input
+                placeholder="Enter email..."
+                class="order-modal-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+            </div>
+
+            <div class="modal-input-box">
+              <label class="order-modal-label" for="user-order"></label>
+              <input
+                class="order-modal-input"
+                placeholder="Enter card.."
+                type="text"
+                name="user-order"
+                id="user-order"
+              />
+            </div>
+
+            <div class="modal-input-box">
+              <label class="order-modal-label" for="user-comment"></label>
+              <textarea
+                class="order-modal-textarea"
+                placeholder="Enter comments..."
+                name="user-comment"
+                id="user-comment"
+              ></textarea>
+            </div>
+          </div>
+
+          <button class="order-modal-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
